@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    
+    <!-- Application Loggers -->
+    <logger name="com.tawhid.quizcraft" level="DEBUG"/>
+    
+    <!-- Third-party Loggers -->
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.hibernate" level="INFO"/>
+    
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
